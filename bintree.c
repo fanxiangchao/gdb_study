@@ -9,7 +9,7 @@ struct node {
   int val;            // stored value
   struct node *left;  // ptr to smaller child
   struct node *right; // ptr to larger child
-}
+};
 typedef struct node *nsp;
 nsp root;
 
@@ -22,7 +22,7 @@ nsp makenode(int x)
   return tmp;
 }
 
-void insert(nsp *btp; int x)
+void insert(nsp *btp,int x)
 {
   nsp tmp = *btp;
   if (*btp == 0) {
@@ -40,7 +40,7 @@ void insert(nsp *btp; int x)
         tmp->left = makenode(x);
         break;
       }
-      else {
+      }else {
         if (tmp->right != 0) {
           tmp = tmp->right;
         }
