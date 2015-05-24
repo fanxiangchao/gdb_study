@@ -1,26 +1,14 @@
-/* page 57
-swapflaw.c
-a flawed function that swaps two integers
+/* page 62
+until-anomaly.c
 */
 #include <stdio.h>
-void swap(int a,int b);
 
 int main(void)
 {
-  int i = 4;
-  int j = 6;
-  
-  printf("i: %d, j: %d\n", i, j);
-  swap(&i, &j);
-  printf("i: %d, j: %d\n", i, j);
+  int i;
+  for (i=0; i<10; ++i)
+    printf("hello world!");
   
   return 0;
-}
-
-void swap(int a,int b)
-{
-  int c = a;
-  a = b;
-  b = c;
 }
 
